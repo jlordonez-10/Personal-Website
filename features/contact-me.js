@@ -8,7 +8,7 @@ const submitButton = document.querySelector("#contact-me button");
 export const setUpContactMe = () => {
     socialLinks.map((link) => {
         const socialsLink = getSocialLinkStructure(link);
-        socialsContainer.appendChild(socialLinks);
+        socialsContainer.appendChild(socialsLink);
     });
 
     form.addEventListener("submit", sendEmail);

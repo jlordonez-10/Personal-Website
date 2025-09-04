@@ -110,3 +110,11 @@ export const getOptionStructure = (category) => {
     option.textContent = category;
     return option;
 };
+
+export const getNavLinkStructure = (section, className) => {
+    const a = document.createElement("a");
+    a.href = section.id;
+    a.className = className;
+    a.textContent = section.name;
+    return a;
+};

@@ -17,17 +17,40 @@
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
         ></script>
 
+        <script src="https://unpkg.com/scrollreveal"></script>
+
         <link rel="stylesheet" href="./styles.css" />
         <script type="module" src="./script.js" defer></script>
     </head>
     <body>
+        <div class="menu">
+            <span>Menu</span>
+            <h3 class="name">Jose Luis</h3>
+            <div class="nav-links"></div>
+            <img src="./images/icons/close.svg" class="close-menu" />
+        </div>
+        <nav>
+            <a href="#" class="logo">
+                <span class="circle">JL</span>
+                <span class="name">Jose Luis Ordonez</span>
+            </a>
+            <div class="nav-links"></div>
+            <img src="./images/icons/open-menu.svg" class="open-menu" />
+        </nav>
         <main>
             <section id="home">
                 <img
                     src="./images/doodles/background-wave-1.svg"
                     class="background-wave"
                 />
-                <header class="navigation"></header>
+                <header class="navigation">
+                    <a href="#" class="logo">
+                        <span class="circle">JL</span>
+                        <span class="name">Jose Luis Ordonez</span>
+                    </a>
+                    <div class="nav-links"></div>
+                    <img src="./images/icons/open-menu.svg" class="open-menu" />
+                </header>
                 <div class="container">
                     <div class="images-container">
                         <img src="./images/doodles/blob.png" class="blob" />
@@ -148,19 +171,20 @@
                                 placeholder="Email Address"
                                 required
                             />
-                            <input
-                                type="text"
-                                name="subject"
-                                placeholder="Subject"
-                                required
-                            />
-                            <textarea
-                                name="Message"
-                                placeholder="Message"
-                                required
-                            ></textarea>
-                            <button type="submit">Send Message</button>
                         </div>
+
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Subject"
+                            required
+                        />
+                        <textarea
+                            name="Message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <button type="submit">Send Message</button>
                     </form>
                     <div class="info">
                         <p>
@@ -179,6 +203,17 @@
                     </div>
                 </div>
             </section>
+            <a href="#" class="scroll-up">
+                <img src="./images/icons/scroll-up.svg" />
+            </a>
         </main>
+        <footer>
+            <div class="links"></div>
+            <div class="socials"></div>
+            <span class="copyright">
+                &#169; All Rights Reserved By
+                <a href="#">Thinking Tech</a>
+            </span>
+        </footer>
     </body>
 </html>
